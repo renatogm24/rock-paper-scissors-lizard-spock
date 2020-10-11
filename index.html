@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Renato Garay">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Renato Garay</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="https://www.linkedin.com/in/renatogaray/" target="_blank">LinkedIn</a>
+            <a class="p-2 text-dark" href="https://github.com/renatogm24" target="_blank">GitHub</a>
+            <a class="p-2 text-dark" href="mailto: renato.garay@pucp.pe" target="_blank">Email</a>
+        </nav>
+        <a class="btn btn-outline-success" href="https://www.linkedin.com/in/renatogaray/" target="_blank">Let's work together</a>
+    </div>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Rock, Paper, Scissors, Lizard, Spock</h1>
+        <p class="lead">Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.</p>
+    </div>
+
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Player</h4>
+                </div>
+                <div class="card-body">
+                    <h2 id="playerPoints" class="card-title pricing-card-title">0 <small class="text-muted">points</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Choose one option:</li>
+                    </ul>
+                    <button id="Rock" type="button" class="btn btn-lg btn-block btn-outline-success">Rock</button>
+                    <button id="Paper" type="button" class="btn btn-lg btn-block btn-outline-success">Paper</button>
+                    <button id="Scissors" type="button" class="btn btn-lg btn-block btn-outline-success">Scissors</button>
+                    <button id="Lizard" type="button" class="btn btn-lg btn-block btn-outline-success">Lizard</button>
+                    <button id="Spock" type="button" class="btn btn-lg btn-block btn-outline-success">Spock</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 id="gameFinal" class="my-0 font-weight-normal">Results</h4>
+                </div>
+                <div class="card-body">
+                    <h2 id="chosePlayer" class="card-title pricing-card-title">Spock</h2>
+                    <h2><small class="text-muted">vs </small></h2>
+                    <h2 id="choseMachine">(-----)</h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li id="result"></li>
+                    </ul>
+                    <img src="https://i.pinimg.com/originals/ea/29/2b/ea292b7ebe894f0542034744bc015a65.png" class="img-fluid" alt="Responsive image">
+                    <button id="play" type="button" class="btn btn-lg btn-block btn-success">Play!</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 id="character" class="my-0 font-weight-normal">Sheldon</h4>
+                </div>
+                <div class="card-body">
+                    <h2 id="machinePoints" class="card-title pricing-card-title">0 <small class="text-muted">points</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Choose one character:</li>
+                    </ul>
+                    <button id="Sheldon" type="button" class="btn btn-lg btn-block btn-outline-success">Sheldon</button>
+                    <button id="Rajesh" type="button" class="btn btn-lg btn-block btn-outline-success">Rajesh</button>
+                    <button id="Leonard" type="button" class="btn btn-lg btn-block btn-outline-success">Leonard</button>
+                    <button id="Howard" type="button" class="btn btn-lg btn-block btn-outline-success">Howard</button>
+                    <button id="Penny" type="button" class="btn btn-lg btn-block btn-outline-success">Penny</button>
+                </div>
+            </div>
+        </div>
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    Renato Garay
+                    <small class="d-block mb-3 text-muted">&copy; 2020</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.linkedin.com/in/renatogaray/" target="_blank">LinkedIn</a></li>
+                        <li><a class="text-muted" href="mailto: renato.garay@pucp.pe" target="_blank">Email</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Developer</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://github.com/renatogm24" target="_blank">GitHub</a></li>
+                        <li><a class="text-muted" href="www.renatogaray.com" target="_blank">renatogaray.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        let characterTxt = document.getElementById("character");
+        let chosePlayer = document.getElementById("chosePlayer");
+        let choseMachine = document.getElementById("choseMachine");
+        let options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+        let result = document.getElementById("result");
+        let play = document.getElementById("play");
+        let playerPoints = 0;
+        let machinePoints = 0;
+        let playerPointsTxt = document.getElementById("playerPoints");
+        let machinePointsTxt = document.getElementById("machinePoints");
+        let gameFinal = document.getElementById("gameFinal");
+
+        play.onclick = function() {
+            console.log(chosePlayer.textContent);
+            playgame(chosePlayer.textContent, randomOption(options));
+            playerPointsTxt.innerHTML = `${playerPoints} <small class=\"text-muted\">points</small>`;
+            machinePointsTxt.innerHTML = `${machinePoints} <small class=\"text-muted\">points</small>`;
+            if (playerPoints > 4) {
+                gameFinal.innerHTML = "You are the winner!"
+                playerPoints = 0;
+                machinePoints = 0;
+            } else if (machinePoints > 4) {
+                gameFinal.innerHTML = "Game Over!"
+                playerPoints = 0;
+                machinePoints = 0;
+            } else {
+                gameFinal.innerHTML = "Results"
+            }
+        };
+
+        function randomOption(options) {
+            let random = options[Math.floor(Math.random() * 5)];
+            choseMachine.innerHTML = random;
+            console.log(random);
+            return random;
+        }
+
+        function changeOption(option) {
+            chosePlayer.innerHTML = option;
+        }
+
+        function changeCharacter(character) {
+            characterTxt.innerHTML = character;
+        }
+
+        function playgame(player, machine) {
+            if (player === "Rock") {
+                if (machine === "Paper") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else if (machine === "Spock") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else if (machine === "Scissors") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else if (machine === "Lizard") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else {
+                    result.innerHTML = "It's a tie!";
+                }
+            } else if (player === "Paper") {
+                if (machine === "Rock") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else if (machine === "Spock") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else if (machine === "Scissors") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else if (machine === "Lizard") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else {
+                    result.innerHTML = "It's a tie!";
+                }
+            } else if (player === "Scissors") {
+                if (machine === "Rock") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else if (machine === "Spock") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else if (machine === "Paper") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else if (machine === "Lizard") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else {
+                    result.innerHTML = "It's a tie!";
+                }
+            } else if (player === "Lizard") {
+                if (machine === "Rock") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else if (machine === "Spock") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else if (machine === "Paper") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else if (machine === "Scissors") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else {
+                    result.innerHTML = "It's a tie!";
+                }
+            } else if (player === "Spock") {
+                if (machine === "Rock") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else if (machine === "Lizard") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else if (machine === "Paper") {
+                    result.innerHTML = "You lost!";
+                    machinePoints++;
+                } else if (machine === "Scissors") {
+                    result.innerHTML = "You won!";
+                    playerPoints++;
+                } else {
+                    result.innerHTML = "It's a tie!";
+                }
+            }
+        }
+
+        let rock = document.getElementById("Rock");
+        rock.onclick = function() {
+            changeOption(this.id);
+        };
+
+        let paper = document.getElementById("Paper");
+        paper.onclick = function() {
+            changeOption(this.id);
+        };
+
+        let scissors = document.getElementById("Scissors");
+        scissors.onclick = function() {
+            changeOption(this.id);
+        };
+
+        let lizard = document.getElementById("Lizard");
+        lizard.onclick = function() {
+            changeOption(this.id);
+        };
+
+        let spock = document.getElementById("Spock");
+        spock.onclick = function() {
+            changeOption(this.id);
+        };
+
+        let sheldon = document.getElementById("Sheldon");
+        sheldon.onclick = function() {
+            changeCharacter(this.id);
+            playerPoints = 0;
+            machinePoints = 0;
+            playerPointsTxt.innerHTML = `${playerPoints} <small class=\"text-muted\">points</small>`;
+            machinePointsTxt.innerHTML = `${machinePoints} <small class=\"text-muted\">points</small>`;
+        };
+
+        let rajesh = document.getElementById("Rajesh");
+        rajesh.onclick = function() {
+            changeCharacter(this.id);
+            playerPoints = 0;
+            machinePoints = 0;
+            playerPointsTxt.innerHTML = `${playerPoints} <small class=\"text-muted\">points</small>`;
+            machinePointsTxt.innerHTML = `${machinePoints} <small class=\"text-muted\">points</small>`;
+        };
+
+        let leonard = document.getElementById("Leonard");
+        leonard.onclick = function() {
+            changeCharacter(this.id);
+            playerPoints = 0;
+            machinePoints = 0;
+            playerPointsTxt.innerHTML = `${playerPoints} <small class=\"text-muted\">points</small>`;
+            machinePointsTxt.innerHTML = `${machinePoints} <small class=\"text-muted\">points</small>`;
+        };
+
+        let howard = document.getElementById("Howard");
+        howard.onclick = function() {
+            changeCharacter(this.id);
+            playerPoints = 0;
+            machinePoints = 0;
+            playerPointsTxt.innerHTML = `${playerPoints} <small class=\"text-muted\">points</small>`;
+            machinePointsTxt.innerHTML = `${machinePoints} <small class=\"text-muted\">points</small>`;
+        };
+
+        let penny = document.getElementById("Penny");
+        penny.onclick = function() {
+            changeCharacter(this.id);
+            playerPoints = 0;
+            machinePoints = 0;
+            playerPointsTxt.innerHTML = `${playerPoints} <small class=\"text-muted\">points</small>`;
+            machinePointsTxt.innerHTML = `${machinePoints} <small class=\"text-muted\">points</small>`;
+        };
+    </script>
+</body>
+
+</html>
